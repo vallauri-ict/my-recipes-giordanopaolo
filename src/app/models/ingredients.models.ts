@@ -1,10 +1,9 @@
-export class RecipeModels{
-    public id : number;
+export class IngredientsModels{
+    //public id : number;
     public name : string;
     public amount : number;
 
-    constructor(id:number, name : string, amount : number){
-        this.id = id;
+    constructor(name : string, amount : number){
         this.name = name;
         this.amount = amount;
     }
