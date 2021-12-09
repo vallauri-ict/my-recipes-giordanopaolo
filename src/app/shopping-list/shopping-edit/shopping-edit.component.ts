@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { IngredientsModels } from 'src/app/models/ingredients.models';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnInit {
-
+  @Output() ingredientAdded = new EventEmitter<IngredientsModels>();
   constructor() { }
   ingredientName:string ='';
   ingredientAmount:number = 0;
@@ -15,6 +16,10 @@ export class ShoppingEditComponent implements OnInit {
   }
 
   addIngredient(){
-    console.log(this.ingredientName, this.ingredientAmount)
+    if(this.ingredientAmount>0){
+      const ingredient: IngredientsModels = new IngredientsModels(this.ingredientName, this.ingredientAmount)
+      this.ingredientAdded.emit(ingredient);
+    }
+    else alert("ingredientAmount cant be 0")
   }
 }

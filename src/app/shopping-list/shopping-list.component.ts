@@ -1,3 +1,4 @@
+import { isNgTemplate } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { IngredientsModels } from 'src/app/models/ingredients.models';
 
@@ -15,6 +16,21 @@ export class ShoppingListComponent implements OnInit {
     new IngredientsModels("Ciao mi chaimo Baka Bibi",1024)
   ]
   ngOnInit(): void {
+  }
+  oningredientAdded(newIngredient:IngredientsModels){
+    let ingredientFound = false;
+    for (const item of this.ingredients) {
+      if(item.name = newIngredient.name)
+      {
+        ingredientFound=true;
+        item.amount +=newIngredient.amount;
+      }
+    }
+    if(!ingredientFound){
+      this.ingredients.push(newIngredient)
+    }
+
+    
   }
 
 }
