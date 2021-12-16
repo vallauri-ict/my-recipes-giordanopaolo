@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   onSelect(SI:string){
-    console.log(SI);
+    //console.log(SI);
   }
 
 }
