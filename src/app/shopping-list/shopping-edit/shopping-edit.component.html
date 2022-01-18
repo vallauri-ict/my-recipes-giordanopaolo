@@ -1,22 +1,22 @@
 <br><br>
 <div class="row">
     <div class="col-xs-12">
-        <form action="">
+        <form>
             <div class="row">
                 <div class="col-sm-5 form-group">
                     <label for="name">Name</label>
-                    <input id="name" type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="ingredientName">
+                    <input id="name" type="text" class="form-control" [(ngModel)]="ingredientName" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="col-sm-2 form-group">
                     <label for="amount">Amount</label>
-                    <input id="Amount" type="number" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="ingredientAmount">
+                    <input id="amount" type="number" class="form-control" [(ngModel)]="ingredientAmount" [ngModelOptions]="{standalone: true}">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <button class="btn btn-success" (click)="addIngredient">Add</button>
-                    <button class="btn btn-primary">Clear</button>
-                    <button class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-success" (click)="addIngredient()" [disabled]="!ingredientName">Add</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-primary" (click)="clearList()">Clear</button>
                 </div>
             </div>
         </form>

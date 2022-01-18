@@ -1,6 +1,6 @@
-import { isNgTemplate } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { IngredientsModels } from 'src/app/models/ingredients.models';
+import { IngredientModel } from '../models/ingredient.model';
+import { ShoppingListService } from '../shared/shopping-list.service';
 
 @Component({
   selector: 'app-shopping-list',
@@ -9,28 +9,14 @@ import { IngredientsModels } from 'src/app/models/ingredients.models';
 })
 export class ShoppingListComponent implements OnInit {
 
-  constructor() { }
+  constructor(public shoppingListService: ShoppingListService) { }
 
-  ingredients:IngredientsModels[]=[
-    new IngredientsModels("Ciao mi chaimo Paolo",523),
-    new IngredientsModels("Ciao mi chaimo Baka Bibi",1024)
-  ]
   ngOnInit(): void {
+    this.shoppingListService.getIngredients();
   }
-  oningredientAdded(newIngredient:IngredientsModels){
-    let ingredientFound = false;
-    for (const item of this.ingredients) {
-      if(item.name = newIngredient.name)
-      {
-        ingredientFound=true;
-        item.amount +=newIngredient.amount;
-      }
-    }
-    if(!ingredientFound){
-      this.ingredients.push(newIngredient)
-    }
 
-    
+  onIngredientAdded(newIngredient: IngredientModel) {
+    this.shoppingListService.addIngredient(newIngredient);
   }
 
 }

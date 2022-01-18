@@ -1,34 +1,79 @@
 {
-    "recipes": [
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti al mandolino",
+      "description": "Un particolare tipo di pasta che ...",
+      "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2020/06/03204258/Pasta-alla-chitarra-con-ragu-di-polo.jpg",
+      "ingredients": [
         {
-            "id": 1,
-            "name ": "Spaghetti alla chitarra",
-            "description": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.buttalapasta.it%2Fricette%2Fricetta-spaghettichitarra-alluovo-con-ricotta-salsiccia-e-zafferano%2F19970%2F&psig=AOvVaw3wCZpkvS2y2cBFznjaGRom&ust=1637313403640000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCA1P7KofQCFQAAAAAdAAAAABAJ",
-            "imagePath": "Un piatto tipico abruzzese"
+          "name": "Farina",
+          "amount": 100
         },
         {
-            "id": 2,
-            "name ": "Lasagna al sugo bolognese",
-            "description": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ricettedigusto.info%2Flasagne-alla-bolognese%2F&psig=AOvVaw1e31w4cOmM1bi5H35c_jhU&ust=1637313527633000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNj6k7vLofQCFQAAAAAdAAAAABAJ",
-            "imagePath": "Una roba buona"
+          "name": "Acqua",
+          "amount": 500
         },
         {
-            "id": 3,
-            "name ": "Gnocchia alla sorrentina",
-            "description": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.giallozafferano.it%2Flacucinadiloredana%2Fgnocchi-alla-sorrentina%2F&psig=AOvVaw2OV3bkqHC2fUB5feh271sr&ust=1637313619186000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNCZzObLofQCFQAAAAAdAAAAABAD",
-            "imagePath": "Ho tanta fame"
-        },
-        {
-            "id": 4,
-            "name ": "semifreddo al mascarpone",
-            "description": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fclaudiafornaciari.it%2Fricette%2Fsemifreddo-al-mascarpone%2F&psig=AOvVaw3I0E8hvQYrr6d57ipwF193&ust=1637313734067000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKCRoKHMofQCFQAAAAAdAAAAABAD",
-            "imagePath": "non so cosa scrivere"
-        },
-        {
-            "id": 5,
-            "name ": "Tiramisù",
-            "description": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.foodsworld.it%2Fricette%2Fricetta-tiramisu-classico%2F&psig=AOvVaw15Qqrx_ZxJiJTBzLa39bX3&ust=1637313798196000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDbxrvMofQCFQAAAAAdAAAAABAD",
-            "imagePath": "Sò che ha i savoiardi, e i savoiardi sono buoni, quindi è buono"
+          "name": "Sale",
+          "amount": 10
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lasagne alla bolognese",
+      "description": "Pasta emiliana molto calorica sempre presente nei pranzi domenicali ...",
+      "imagePath": "https://www.tribugolosa.com/uploads/media/lasagne-alla-bolognese-hem1.jpg?1389133420"
+    },
+    {
+      "id": 3,
+      "name": "Gnocchi ai formaggi",
+      "description": "Ottimi soprattutto in Val Varaita nella variante 'Ravioles' ...",
+      "imagePath": "https://media-cdn.tripadvisor.com/media/photo-s/14/b1/37/d3/ravioles-della-valle.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tiramisu",
+      "description": "Classico dolce italiano con panna e mascarpone ...",
+      "imagePath": "https://toscanedigusto.com/wp-content/uploads/2019/09/maxresdefault.jpg"
+    }
+  ],
+  "shopping-list": [
+    {
+      "id": 1,
+      "name": "Sugar",
+      "amount": 11
+    },
+    {
+      "id": 2,
+      "name": "Tomato",
+      "amount": 2
+    },
+    {
+      "name": "Fish",
+      "amount": 6,
+      "id": 3
+    },
+    {
+      "name": "Patate",
+      "amount": 2,
+      "id": 4
+    },
+    {
+      "name": "Farina",
+      "amount": 200,
+      "id": 5
+    },
+    {
+      "name": "Acqua",
+      "amount": 1000,
+      "id": 6
+    },
+    {
+      "name": "Sale",
+      "amount": 20,
+      "id": 7
+    }
+  ]
 }

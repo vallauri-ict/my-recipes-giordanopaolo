@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { RecipeModels } from '../models/recipe.models';
+import { Component, OnInit } from '@angular/core';
+import { RecipeService } from '../shared/recipe.service';
 
 @Component({
   selector: 'app-recipes',
@@ -7,9 +7,9 @@ import { RecipeModels } from '../models/recipe.models';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  constructor() { }
-  @Input() selectedRecipe !: RecipeModels;
-  ngOnInit(): void {
-  }
+  
+  constructor(public recipeService:RecipeService) { }
+
+  ngOnInit(): void { }
 
 }
